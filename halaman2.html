@@ -1,0 +1,156 @@
+<!-- Halaman 2: Form Pemutakhiran Data Alumni -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemutakhiran Data Alumni</title>
+    <style>
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-color: #04048c;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #04048c;
+            font-weight: 500;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background: #04048c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #04048c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));    
+            background-color: #04048c;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        form {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #04048c;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background: #04048c;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #04048c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pemilihan Ketua Ikatan Alumni POLBAN 2025</h1>
+        <p>"Satu Suara untuk Masa Depan Alumni yang Lebih Baik"</p>
+    </header>
+    <form>
+        <h2>Registrasi Pemilih</h2>
+
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="nim">NIM / Nomor Alumni</label>
+        <input type="text" id="nim" name="nim" required>
+
+        <label for="email">Email Aktif</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="angkatan">Angkatan</label>
+        <input type="text" id="angkatan" name="angkatan" required>
+
+        <label for="jurusan">Jurusan</label>
+        <select id="jurusan" name="jurusan">
+            <option value="TTE">Teknik Telekomunikasi</option>
+            <option value="TI">Teknik Informatika</option>
+            <option value="EL">Teknik Elektro</option>
+            <option value="ME">Teknik Mesin</option>
+            <option value="AK">Akuntansi</option>
+            <!-- Tambahkan jurusan lain sesuai kebutuhan -->
+        </select>
+
+        <label for="pekerjaan">Pekerjaan Saat Ini</label>
+        <input type="text" id="pekerjaan" name="pekerjaan">
+
+        <label for="alamat">Alamat Domisili</label>
+        <textarea id="alamat" name="alamat"></textarea>
+
+        <button type="submit">Kirim Pembaruan</button>
+    </form>
+</body>
+
+</html>

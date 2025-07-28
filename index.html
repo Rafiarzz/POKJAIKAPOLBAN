@@ -1,0 +1,312 @@
+<!-- Halaman 1: Informasi & Pendaftaran Pemilihan Ketua Alumni -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilihan Ketua Alumni POLBAN</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .container  {
+            max-width: 1000px;
+            background-color: #f9f9f9;
+            opacity: 0.6;
+            margin: auto;
+            padding: 2rem;
+            color: black;
+            padding: 4rem 1.5rem;
+            text-align: justify;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            position: relative;
+        }
+
+
+        .logo-left,
+        .logo-right {
+            position: absolute;
+            top: 1rem;
+        }
+
+        .logo-left {
+            left: 1rem;
+        }
+
+        .logo-right {
+            right: 1rem;
+        }
+
+        .logo-left img,
+        .logo-right img {
+            height: 60px;
+            width: auto;
+        }
+
+        .header-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        header {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-position: center;
+            background-color: #04048c;
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            overflow: hidden;
+
+        }
+
+        nav a {
+            position: relative;
+            display: inline-block;
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #04048c;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: center;
+            width: 100%;
+            height: 2px;
+            background-color: #fb7c04;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fb7c04;
+        }
+
+        nav a:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #04048c;
+            font-weight: 500;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('https://ikapolban.or.id/uploads/img/main/620fbd8f1ac685.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            opacity: 0.8;
+        }
+
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            color: black;
+            padding: 4rem 1.5rem;
+            text-align: justify;
+        }
+
+        .section info {
+            background: url('https://ikapolban.or.id/uploads/img/main/620fbd8f1ac685.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 1.5rem;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background: #fb7c04;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #fb7c04;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-color: #04048c;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-left">
+                <img src="../logo IKA POLBAN.png" alt="Logo 1" class="logo-1">
+            </div>
+            <div class="logo-right">
+                <img src="../logo POKJA.png" alt="Logo 2" class="logo-2">
+            </div>
+            <div class="header-text">
+                <h1>Pemilihan Ketua Ikatan Keluarga Alumni POLBAN 2025</h1>
+                <p>"Satu Suara untuk Masa Depan Alumni yang Lebih Baik"</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#info">Informasi</a>
+        <a href="#daftar">Pendaftaran Calon</a>
+        <a href="halaman2.html">Registrasi Pemilih</a>
+    </nav>
+
+    <div class="container">
+        <section id="info">
+            <h2>Informasi Pemilihan</h2>
+            <p>
+                📣 PEMILU IKA POLBAN 2025 – SAATNYA ALUMNI MEMILIH! <br>
+                <br>
+                Halo seluruh Alumni Politeknik Negeri Bandung! 👋 <br>
+                Momentum besar untuk kita semua sudah di depan mata. Pokja Pemilu IKA POLBAN akan segera
+                menyelenggarakan
+                Pemilihan Ketua Ikatan Keluarga Alumni POLBAN (IKA POLBAN) Periode 2025–2029.<br>
+                <br>
+                Pemilu ini bukan sekadar rutinitas, melainkan wadah demokratis bagi kita semua, alumni dari berbagai
+                angkatan dan jurusan, untuk menentukan arah masa depan organisasi yang kita cintai ini. IKA POLBAN
+                adalah
+                rumah besar kita, dan pemimpin yang kita pilih akan menjadi nahkoda dalam perjalanan membangun jejaring,
+                kontribusi, dan dampak nyata alumni bagi institusi dan masyarakat luas.<br>
+                <br>
+                💡 Melalui proses yang transparan dan partisipatif, Pokja Pemilu mengajak semua alumni untuk : <br>
+                ✔ Mengikuti seluruh tahapan pemilu <br>
+                ✔ Menyebarluaskan informasi ke jejaring alumni <br>
+                ✔ Berpartisipasi aktif dalam pemutakhiran data pemilih dan pemungutan suara <br>
+                <br>
+                🌐 Seluruh informasi terkait jadwal, pendaftaran calon, dan pemungutan suara akan diumumkan melalui
+                kanal
+                resmi Pokja Pemilu IKA POLBAN. <br>
+                <br>
+                📲 Yuk, follow dan pantau terus:
+                <link rel="pokjaikapolban" href="https://www.instagram.com/pokjaikapolban/"> <br>
+                <br>
+                🔊 Karena suaramu menentukan arah IKA POLBAN ke depan! <br>
+                Bersama kita wujudkan IKA yang lebih solid, aktif, dan berdampak! <br>
+                🗳 Suaramu, Aksimu, Masa Depan Kita! <br>
+            </p>
+
+            <p>Pemilihan Ketua Ikatan Keluarga Alumni POLBAN periode 2025–2028 akan segera dilaksanakan. Proses ini
+                terbuka
+                untuk seluruh alumni yang telah terdaftar secara resmi. Berikut adalah tahapan dan jadwalnya:</p>
+            <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: collapse; width: 100%; font-family: Poppins, sans-serif;">
+                <thead style="background-color: #003366; color: white;">
+                    <tr>
+                        <th>Kegiatan</th>
+                        <th>Tanggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sosialisasi</td>
+                        <td>Juli 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Registrasi Bakal Calon</td>
+                        <td>Juli–September 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Registrasi Alumni</td>
+                        <td>Juli–Oktober 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Penetapan Calon Ketua IKA POLBAN</td>
+                        <td>Agustus–September 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Masa Kampanye</td>
+                        <td>Agustus–Oktober 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Masa Tenang</td>
+                        <td>Oktober 2025</td>
+                    </tr>
+                    <tr>
+                        <td>E-VOTE</td>
+                        <td>Oktober 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Penetapan Ketua IKA POLBAN Terpilih</td>
+                        <td>Oktober 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+
+    <section id="daftar">
+        <h2>Daftar Sebagai Kandidat</h2>
+        <p>Silakan unduh dan lengkapi formulir pendaftaran di bawah ini untuk mendaftarkan diri sebagai calon ketua
+            alumni:</p>
+        <a href="https://docs.google.com/spreadsheets/d/1v5no3Y8EiXBgQJx-POASA2W2bthNisDaGodsz35aNyo/edit?gid=0#gid=0"
+            class="btn">FORM Pendaftaran </a>
+        <p>Setelah diisi, kirimkan melalui email: <strong>pemilu@alumni-polban.ac.id</strong></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Ikatan Keluarga Alumni POLBAN | pemilu.alumni-polban.ac.id
+    </footer>
+</body>
+
+</html>
